@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #243042;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
