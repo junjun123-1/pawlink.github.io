@@ -11,27 +11,27 @@ import type {
 
 const wait = (ms = 200) => new Promise((resolve) => setTimeout(resolve, ms))
 
-export const breeds = ['中华田园猫', '英短', '金毛', '柯基', '中华田园犬']
+export const breeds = ['中华田园猫', '英短', '金毛', '柯基', '中华田园犬', '比格犬']
 
 export const pets: Pet[] = [
-  { id: 1, name: '小白', avatar: 'https://placehold.co/300x220?text=Xiaobai', images: ['https://placehold.co/780x380?text=Xiaobai-1', 'https://placehold.co/780x380?text=Xiaobai-2'], breed: '中华田园犬', gender: '公', ageGroup: '幼年', personalityTags: ['亲人', '活泼'], story: '在雨夜被救助，如今逐渐恢复健康。', desc: '喜欢追球，饭量很好。', status: 'cloud' },
-  { id: 2, name: '奶糖', avatar: 'https://placehold.co/300x220?text=Naitang', images: ['https://placehold.co/780x380?text=Naitang-1'], breed: '英短', gender: '母', ageGroup: '成年', personalityTags: ['温柔', '黏人'], story: '曾长期流浪，现已适应室内生活。', desc: '爱在窗边晒太阳。', status: 'adoptable' },
-  { id: 3, name: '球球', avatar: 'https://placehold.co/300x220?text=Qiuqiu', images: ['https://placehold.co/780x380?text=Qiuqiu-1'], breed: '柯基', gender: '母', ageGroup: '幼年', personalityTags: ['聪明', '贪吃'], story: '腿部受伤后康复良好。', desc: '训练反应很快。', status: 'cloud' },
-  { id: 4, name: '阿黄', avatar: 'https://placehold.co/300x220?text=Ahuang', images: ['https://placehold.co/780x380?text=Ahuang-1'], breed: '中华田园犬', gender: '公', ageGroup: '老年', personalityTags: ['稳重'], story: '年纪较大，需要更多照顾。', desc: '散步节奏慢，性格超稳。', status: 'adoptable' },
-  { id: 5, name: '咪咪', avatar: 'https://placehold.co/300x220?text=Mimi', images: ['https://placehold.co/780x380?text=Mimi-1'], breed: '中华田园猫', gender: '母', ageGroup: '成年', personalityTags: ['独立', '好奇'], story: '从市场附近救助，已完成绝育。', desc: '喜欢玩羽毛棒。', status: 'cloud' },
-  { id: 6, name: '多多', avatar: 'https://placehold.co/300x220?text=Duoduo', images: ['https://placehold.co/780x380?text=Duoduo-1'], breed: '金毛', gender: '公', ageGroup: '成年', personalityTags: ['友好'], story: '被遗弃后由站内长期照料。', desc: '非常亲人，适合家庭领养。', status: 'adoptable' }
+  { id: 1, name: '可乐', avatar: '/可乐.jpg', images: ['/可乐.jpg'], breed: '比格犬', gender: '公', ageGroup: '幼年', personalityTags: ['亲人', '活泼'], story: '在雨夜被救助，如今逐渐恢复健康。', desc: '喜欢追球，饭量很好。', status: 'cloud' },
+  { id: 2, name: '小满', avatar: '/小满.jpg', images: ['/小满.jpg'], breed: '英短', gender: '母', ageGroup: '成年', personalityTags: ['温柔', '黏人'], story: '曾长期流浪，现已适应室内生活。', desc: '爱在窗边晒太阳。', status: 'adoptable' },
+  { id: 3, name: '来财', avatar: '/来财.jpg', images: ['/来财.jpg'], breed: '柯基', gender: '母', ageGroup: '幼年', personalityTags: ['聪明', '贪吃'], story: '腿部受伤后康复良好。', desc: '训练反应很快。', status: 'cloud' },
+  { id: 4, name: '灰团', avatar: '/灰团.jpg', images: ['/灰团.jpg'], breed: '中华田园犬', gender: '公', ageGroup: '老年', personalityTags: ['稳重'], story: '年纪较大，需要更多照顾。', desc: '散步节奏慢，性格超稳。', status: 'adoptable' },
+  { id: 5, name: '糯米', avatar: '/糯米.jpg', images: ['/糯米.jpg'], breed: '中华田园猫', gender: '母', ageGroup: '成年', personalityTags: ['独立', '好奇'], story: '从市场附近救助，已完成绝育。', desc: '喜欢玩羽毛棒。', status: 'cloud' },
+  { id: 6, name: '饼饼', avatar: '/饼饼.jpg', images: ['/饼饼.jpg'], breed: '金毛', gender: '公', ageGroup: '成年', personalityTags: ['友好'], story: '被遗弃后由站内长期照料。', desc: '非常亲人，适合家庭领养。', status: 'adoptable' }
 ]
 
 export const posts: GrowthPost[] = [
-  { id: 1, petId: 1, content: '今天给小白洗了澡，超级配合。', mediaUrl: 'https://placehold.co/600x300?text=Post1', likes: 20, createdAt: '2026-03-24 10:10' },
-  { id: 2, petId: 1, content: '小白学会了坐下指令。', mediaUrl: 'https://placehold.co/600x300?text=Post2', likes: 12, createdAt: '2026-03-23 14:20' },
+  { id: 1, petId: 1, content: '今天给可乐洗了澡，超级配合。', mediaUrl: '/可乐洗澡.jpg', likes: 20, createdAt: '2026-03-24 10:10' },
+  { id: 2, petId: 1, content: '可乐学会了坐下指令。', mediaUrl: '/可乐坐下.jpg', likes: 12, createdAt: '2026-03-23 14:20' },
   { id: 3, petId: 3, content: '球球今天散步 3 公里。', mediaUrl: 'https://placehold.co/600x300?text=Post3', likes: 16, createdAt: '2026-03-22 09:10' }
 ]
 
 export const products: MallProduct[] = [
-  { id: 1, name: 'PawLink 帆布袋', image: 'https://placehold.co/300x300?text=Bag', points: 300, cashDiff: 0, stock: 8 },
-  { id: 2, name: '宠物玩具盲盒', image: 'https://placehold.co/300x300?text=Toy', points: 500, cashDiff: 9.9, stock: 15 },
-  { id: 3, name: '定制徽章', image: 'https://placehold.co/300x300?text=Badge', points: 200, cashDiff: 0, stock: 0 }
+  { id: 1, name: 'PawLink 帆布袋', image: '/帆布袋.jpg', points: 300, cashDiff: 0, stock: 8 },
+  { id: 2, name: '宠物玩具盲盒', image: '/宠物玩具盲盒.jpg', points: 500, cashDiff: 9.9, stock: 15 },
+  { id: 3, name: '定制徽章', image: '/定制徽章.jpg', points: 200, cashDiff: 0, stock: 0 }
 ]
 
 let userCloudPets: UserCloudPet[] = [
@@ -45,7 +45,7 @@ let adminLoggedIn = false
 let currentUser: { id: number; username: string; avatar: string; donate: number; isAdmin: boolean } | null = {
   id: currentUid,
   username: 'jun',
-  avatar: 'https://placehold.co/100x100?text=J',
+  avatar: '/头像.jpg',
   donate: 666,
   isAdmin: false
 }
@@ -96,8 +96,8 @@ export async function getHomeData() {
   await wait()
   return {
     banners: [
-      { id: 1, image: 'https://placehold.co/1200x360?text=PawLink+Activity+1', link: '/pets/1' },
-      { id: 2, image: 'https://placehold.co/1200x360?text=PawLink+Activity+2', link: '/tasks' }
+      { id: 1, image: '/首页图片1.png', link: '/pets/1' },
+      { id: 2, image: '/首页图片2.png', link: '/tasks' }
     ],
     recommendPets: pets.slice(0, 6),
     latestPosts: posts.slice(0, 5)

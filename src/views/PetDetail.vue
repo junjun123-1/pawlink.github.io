@@ -91,7 +91,7 @@ onMounted(async () => {
 
 <template>
   <div v-if="pet">
-    <el-carousel height="320px">
+    <el-carousel height="400px">
       <el-carousel-item v-for="img in pet.images" :key="img"><img :src="img" class="head-img" /></el-carousel-item>
     </el-carousel>
 
@@ -163,8 +163,9 @@ onMounted(async () => {
 <style scoped>
 .head-img {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
+  background-color: #f5f7fa;
 }
 .mt {
   margin-top: 16px;
